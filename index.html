@@ -1,87 +1,428 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;500&display=swap" rel="stylesheet">
-    <title>Arnaldo Ferraz</title>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Arnaldo Ferraz | Desenvolvedor Full Stack
+  </title>
+
+  <meta
+    name="description"
+    content="Portfólio de Arnaldo Ferraz, desenvolvedor Full Stack focado em interfaces modernas, responsivas e experiências digitais."
+  >
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Font Awesome -->
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
+
 </head>
+
 <body>
-        <div class="caixa-principal" id="home">
-            <nav>
-                <h2 class="portifolio">Portfo<span>lio</span></h2>
-                <ul>
-                    <li><a class="link-menu" href="#home">Home</a></li>
-                    <li><a class="link-menu" href="#sobre">Sobre</a></li>
-                    <li><a class="link-menu" href="#projetos">Projetos</a></li>
-                    <li><a class="link-menu" href="#fale-comigo">Fale comigo</a></li>
 
-                </ul>
-            </nav>
+  <!-- BOTÃO TEMA -->
 
-            <div class="meu-nome">
-                <h1>Arnaldo<span>Ferraz</span></h1>
-                <h3>Programador Front End</h3>
-            </div>
+  <button
+    id="toggle-theme"
+    aria-label="Alternar tema"
+  >
+    ☀️
+  </button>
+
+  <!-- HERO -->
+
+  <header
+    class="hero"
+    id="home"
+  >
+
+    <!-- NAVBAR -->
+
+    <nav>
+
+      <h2 class="logo">
+        Arnaldo<span>Ferraz</span>
+      </h2>
+
+      <ul>
+
+        <li>
+          <a href="#home">
+            Início
+          </a>
+        </li>
+
+        <li>
+          <a href="#sobre">
+            Sobre
+          </a>
+        </li>
+
+        <li>
+          <a href="#projetos">
+            Projetos
+          </a>
+        </li>
+
+        <li>
+          <a href="#contato">
+            Contato
+          </a>
+        </li>
+
+      </ul>
+
+    </nav>
+
+    <!-- HERO CONTENT -->
+
+    <div class="hero-content">
+
+      <!-- TEXTO -->
+
+      <div class="hero-text">
+
+        <p class="tag">
+          ✨ Portfólio Profissional
+        </p>
+
+        <h1>
+          Olá, eu sou
+          <span>
+            Arnaldo Ferraz
+          </span>
+        </h1>
+
+        <h3>
+          Desenvolvedor Full Stack
+        </h3>
+
+        <p>
+          Desenvolvo aplicações modernas, responsivas e focadas em performance,
+          experiência do usuário e design profissional.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a
+            href="#projetos"
+            class="btn primary"
+          >
+            Ver Projetos
+          </a>
+
+          <a
+            href="#contato"
+            class="btn secondary"
+          >
+            Contato
+          </a>
+
         </div>
 
-        <section id="sobre">
-            <img src="./img/Arnaldo.png" alt="">
+      </div>
 
-            <div>
-                <h2>Sobre mim</h2>
-                <p>Eu sou um Programador Front End, tenho experiência e conhecimento criando aplicações com HTML, CSS e JavaScript.</p>
-                <button>Entre em contato</button>
-            </div>
-        </section>
+      <!-- FOTO -->
 
-        <div class="card-projetos">
+      <div class="hero-image">
 
-            <div class="card">
-                <img src="./img/netflix.png" alt="">
-                <h5>Netflix</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ad error harum doloribus labore,
-                odio necessitatibus officia illum rem veritatis possimus aut</p>
-                <a href="https://peaceful-starlight-02739b.netlify.app/" target="_blank">Ver Projeto</a>
+        <img
+          src="./img/Arnaldo.png"
+          alt="Foto de Arnaldo Ferraz"
+        >
 
-                <div class="card">
-                    <img src="./img/starbucks.png">
-                    <h5>Starbucks</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ad error harum doloribus labore,
-                        odio necessitatibus officia illum rem veritatis possimus aut</p>
-                    <a href="https://starbucks-rodolfo.netlify.app/" target="_blank">Ver Projeto</a>
-                </div>
-    
-                <div class="card">
-                    <img src="./img/crono.png">
-                    <h5>Cronometro</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ad error harum doloribus labore,
-                        odio necessitatibus officia illum rem veritatis possimus aut</p>
-                    <a href="https://cronometro-mpdz.netlify.app/" target="_blank">Ver Projeto</a>
-                </div>
-            </div>
+      </div>
+
+    </div>
+
+  </header>
+
+  <!-- SOBRE -->
+
+  <section
+    class="sobre"
+    id="sobre"
+  >
+
+    <div class="sobre-container">
+
+      <div class="sobre-text">
+
+        <p class="tag">
+          👨‍💻 Sobre Mim
+        </p>
+
+        <h2>
+          Desenvolvedor apaixonado por tecnologia
+        </h2>
+
+        <p>
+          Sou apaixonado por desenvolvimento web e tecnologia.
+          Atualmente estudo HTML, CSS, JavaScript, React e outras tecnologias
+          modernas para criar interfaces profissionais e experiências digitais.
+        </p>
+
+        <p>
+          Estou sempre buscando evoluir minhas habilidades,
+          aprender novas ferramentas e criar projetos cada vez melhores.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PROJETOS -->
+
+  <section
+    class="projetos"
+    id="projetos"
+  >
+
+    <div class="titulo-section">
+
+      <p class="tag">
+        🚀 Portfólio
+      </p>
+
+      <h2>
+        Meus Projetos
+      </h2>
+
+    </div>
+
+    <div class="cards-container">
+
+      <!-- CARD 1 -->
+
+      <div class="card">
+
+        <img
+          src="./img/petlife.jpeg"
+          alt="Projeto PetLife"
+        >
+
+        <div class="card-content">
+
+          <h3>
+            PetLife
+          </h3>
+
+          <p>
+            Cuidando com amor, vivendo com alegria:
+            PetLife, onde a vida dos pets é mais feliz.
+          </p>
+
+          <a
+            href="https://arnaldoferraz.github.io/PetLife/"
+            target="_blank"
+          >
+            Ver Projeto
+          </a>
+
         </div>
 
-        <footer id="fale-comigo">
-            <h5>Arnaldo Ferraz</h5>
-            <p>Para mais informações</p>
+      </div>
 
-            <div class="social">
-                <a href="https://www.linkedin.com/in/arnaldoferraz" target="_blank">
-                    <img src="./img/linkedin.png" alt="">
-                </a>
+      <!-- CARD 2 -->
 
-                <a href="tel:+5577999383906">
-                    <img src="./img/telefone.png" alt="">
-                </a>
+      <div class="card">
 
-            </div>
-            
-        </footer>
-        
+        <img
+          src="./img/conversor de moeda.png"
+          alt="Projeto Conversor de Moedas"
+        >
+
+        <div class="card-content">
+
+          <h3>
+            Conversor de Moedas
+          </h3>
+
+          <p>
+            <p>
+                Aplicação de conversão de moedas com design moderno e responsivo,
+                desenvolvida para proporcionar uma experiência rápida, intuitiva e eficiente ao usuário.
+            </p>
+          </p>
+
+          <a
+            href="https://arnaldoferraz.github.io/Conversor-de-moedas/"
+            target="_blank"
+          >
+            Ver Projeto
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- CARD 3 -->
+
+      <div class="card">
+
+        <img
+          src="./img/fashion.png"
+          alt="Projeto Fashion"
+        >
+
+        <div class="card-content">
+
+          <h3>
+            Fashion
+          </h3>
+
+          <p>
+            <p>
+                Projeto de landing page fashion com visual moderno e sofisticado,
+                desenvolvido para proporcionar uma experiência elegante e responsiva.
+                A aplicação foi criada utilizando HTML, CSS e JavaScript,
+                com foco em design, performance e identidade visual profissional.
+            </p>
+          </p>
+
+          <a
+            href="https://arnaldoferraz.github.io/fashion/"
+            target="_blank"
+          >
+            Ver Projeto
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTATO -->
+
+  <footer id="contato">
+
+    <p class="tag">
+      📬 Contato
+    </p>
+
+    <h2>
+      Criando experiências digitais modernas e impactantes
+    </h2>
+
+    <p class="footer-text">
+      Sou apaixonado por tecnologia, desenvolvimento web e criação de interfaces modernas.
+      Estou sempre em busca de novos desafios, oportunidades e projetos para evoluir como desenvolvedor Full Stack.
+    </p>
+
+    <div class="social">
+
+      <!-- LINKEDIN -->
+
+      <a
+        href="https://www.linkedin.com/in/arnaldoferraz"
+        target="_blank"
+        aria-label="LinkedIn"
+      >
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+
+      <!-- GITHUB -->
+
+      <a
+        href="https://github.com/ArnaldoFerraz"
+        target="_blank"
+        aria-label="GitHub"
+      >
+        <i class="fa-brands fa-github"></i>
+      </a>
+
+      <!-- WHATSAPP -->
+
+      <a
+        href="https://wa.me/5577999383906"
+        target="_blank"
+        aria-label="WhatsApp"
+      >
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+
+    </div>
+
+    <p class="frase-final">
+      Obrigado por visitar meu portfólio 🚀
+    </p>
+
+    <p class="copyright">
+      © 2026 Arnaldo Ferraz — Todos os direitos reservados.
+    </p>
+
+  </footer>
+
+  <!-- SCRIPT -->
+
+  <script>
+
+    const button = document.getElementById('toggle-theme');
+    const body = document.body;
+
+    // TEMA PADRÃO = ESCURO
+
+    if(localStorage.getItem('theme') === 'light'){
+
+      body.classList.add('light-mode');
+
+      button.textContent = '🌙';
+
+    }else{
+
+      button.textContent = '☀️';
+
+    }
+
+    button.addEventListener('click', () => {
+
+      body.classList.toggle('light-mode');
+
+      const isLight =
+        body.classList.contains('light-mode');
+
+      button.textContent =
+        isLight ? '🌙' : '☀️';
+
+      localStorage.setItem(
+        'theme',
+        isLight ? 'light' : 'dark'
+      );
+
+    });
+
+  </script>
+
 </body>
-
 </html>
