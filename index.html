@@ -199,129 +199,134 @@
 
   </section>
 
+
   <!-- PROJETOS -->
 
-  <section
-    class="projetos"
-    id="projetos"
-  >
+<section class="projetos" id="projetos">
 
-    <div class="titulo-section">
+  <div class="titulo-section">
 
-      <p class="tag">
-        🚀 Portfólio
-      </p>
+    <p class="tag">🚀 Portfólio</p>
 
-      <h2>
-        Meus Projetos
-      </h2>
+    <h2>Meus Projetos</h2>
 
+  </div>
+
+  <div class="cards-container">
+
+    <!-- CARD 1 -->
+    <div class="card">
+
+      <img src="./img/petlife.jpeg" alt="Projeto PetLife">
+
+      <div class="card-content">
+
+        <h3>PetLife</h3>
+
+        <p>
+          Cuidando com amor, vivendo com alegria:
+          PetLife, onde a vida dos pets é mais feliz.
+        </p>
+
+        <a href="https://arnaldoferraz.github.io/PetLife/" target="_blank">
+          Ver Projeto
+        </a>
+
+      </div>
     </div>
 
-    <div class="cards-container">
+    <!-- CARD 2 -->
+    <div class="card">
 
-      <!-- CARD 1 -->
+      <img src="./img/conversor de moeda.png" alt="Conversor de Moedas">
 
-      <div class="card">
+      <div class="card-content">
 
-        <img
-          src="./img/petlife.jpeg"
-          alt="Projeto PetLife"
-        >
+        <h3>Conversor de Moedas</h3>
 
-        <div class="card-content">
+        <p>
+          Aplicação de conversão de moedas com design moderno e responsivo,
+          proporcionando uma experiência rápida e intuitiva ao usuário.
+        </p>
 
-          <h3>
-            PetLife
-          </h3>
-
-          <p>
-            Cuidando com amor, vivendo com alegria:
-            PetLife, onde a vida dos pets é mais feliz.
-          </p>
-
-          <a
-            href="https://arnaldoferraz.github.io/PetLife/"
-            target="_blank"
-          >
-            Ver Projeto
-          </a>
-
-        </div>
+        <a href="https://arnaldoferraz.github.io/Conversor-de-moedas/" target="_blank">
+          Ver Projeto
+        </a>
 
       </div>
+    </div>
 
-      <!-- CARD 2 -->
+    <!-- CARD 3 -->
+    <div class="card">
 
-      <div class="card">
+      <img src="./img/fashion.png" alt="Projeto Fashion">
 
-        <img
-          src="./img/conversor de moeda.png"
-          alt="Projeto Conversor de Moedas"
-        >
+      <div class="card-content">
 
-        <div class="card-content">
+        <h3>Fashion</h3>
 
-          <h3>
-            Conversor de Moedas
-          </h3>
+        <p>
+          Landing page fashion com visual moderno e sofisticado,
+          focado em design, performance e responsividade.
+        </p>
 
-          <p>
-            <p>
-                Aplicação de conversão de moedas com design moderno e responsivo,
-                desenvolvida para proporcionar uma experiência rápida, intuitiva e eficiente ao usuário.
-            </p>
-          </p>
-
-          <a
-            href="https://arnaldoferraz.github.io/Conversor-de-moedas/"
-            target="_blank"
-          >
-            Ver Projeto
-          </a>
-
-        </div>
+        <a href="https://arnaldoferraz.github.io/fashion/" target="_blank">
+          Ver Projeto
+        </a>
 
       </div>
+    </div>
 
-      <!-- CARD 3 -->
+    <!-- CARD 4 -->
+    <div class="card">
 
-      <div class="card">
+      <img src="./img/canelapreta.png" alt="Projeto PetLife">
 
-        <img
-          src="./img/fashion.png"
-          alt="Projeto Fashion"
-        >
+      <div class="card-content">
 
-        <div class="card-content">
+        <h3>Criatório Canela Preta</h3>
 
-          <h3>
-            Fashion
-          </h3>
+        <p>
+          O Criatório Canela Preta trabalha com criação de galinhas caipiras de forma natural.
+          Garantimos qualidade, saúde e cuidado em todo o processo.
+        </p>
 
-          <p>
-            <p>
-                Projeto de landing page fashion com visual moderno e sofisticado,
-                desenvolvido para proporcionar uma experiência elegante e responsiva.
-                A aplicação foi criada utilizando HTML, CSS e JavaScript,
-                com foco em design, performance e identidade visual profissional.
-            </p>
-          </p>
-
-          <a
-            href="https://arnaldoferraz.github.io/fashion/"
-            target="_blank"
-          >
-            Ver Projeto
-          </a>
-
-        </div>
+        <a href="https://criatoriocanelapreta.netlify.app/" target="_blank">
+          Ver Projeto
+        </a>
 
       </div>
 
     </div>
 
-  </section>
+    <!-- CARD 5 -->
+    <div class="card">
+
+      <img src="./img/rotacliente.png" alt="Projeto PetLife">
+
+      <div class="card-content">
+
+        <h3>Rota Cliente</h3>
+
+        <p>
+          Rota Cliente | Sistema inteligente para motoristas.
+        </p>
+
+        <a href="https://rotacliente.netlify.app/" target="_blank">
+          Ver Projeto
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  </div>
+
+  
+
+</section>
 
   <!-- CONTATO -->
 
@@ -386,43 +391,7 @@
 
   <!-- SCRIPT -->
 
-  <script>
-
-    const button = document.getElementById('toggle-theme');
-    const body = document.body;
-
-    // TEMA PADRÃO = ESCURO
-
-    if(localStorage.getItem('theme') === 'light'){
-
-      body.classList.add('light-mode');
-
-      button.textContent = '🌙';
-
-    }else{
-
-      button.textContent = '☀️';
-
-    }
-
-    button.addEventListener('click', () => {
-
-      body.classList.toggle('light-mode');
-
-      const isLight =
-        body.classList.contains('light-mode');
-
-      button.textContent =
-        isLight ? '🌙' : '☀️';
-
-      localStorage.setItem(
-        'theme',
-        isLight ? 'light' : 'dark'
-      );
-
-    });
-
-  </script>
+  <script src="./script.js"></script>
 
 </body>
 </html>
